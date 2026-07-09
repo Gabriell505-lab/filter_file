@@ -1,15 +1,11 @@
 import os
 
-
 nome = input("Digite o nome da pasta: ")
-
 
 pasta_inicial = "C:\\Users"
 
-
 encontrou = False
 contador = 0
-
 
 for caminho, pastas, arquivos in os.walk(pasta_inicial):
 
