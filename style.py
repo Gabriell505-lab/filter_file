@@ -1,4 +1,13 @@
 import tkinter as tk
+import os 
+
+lista_resultados = tk.Listbox(
+    janela,
+    width=70,
+    height=10
+)
+
+lista_resultados.pack(pady=10)
 
 # Criando a janela
 janela = tk.Tk()
