@@ -39,3 +39,27 @@ botao.pack()
 
 # Mantém a janela aberta
 janela.mainloop()
+
+lfor caminho, pastas, arquivos in os.walk(pasta_inicial):
+
+for pasta in pastas:
+
+        if pasta.lower() == nome.lower():
+
+            contador += 1
+            encontrou = True
+
+            lista_resultados.insert(
+                tk.END,
+                f"Resultado {contador}:"
+            )
+
+            lista_resultados.insert(
+                tk.END,
+                os.path.join(caminho, pasta)
+            )
+
+            lista_resultados.insert(
+                tk.END,
+                "-" * 40
+            )
