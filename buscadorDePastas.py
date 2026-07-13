@@ -7,12 +7,12 @@ pasta_inicial = "C:\\Users"
 encontrou = False
 contador = 0
 
-for caminho, pastas, arquivos in os.walk(pasta_inicial):
-
+for caminho, pastas, arquivos in os.walk(pasta_inicial): 
+    
     
     for pasta in pastas:
 
-        
+
         if pasta.lower() == nome.lower():
 
             contador += 1
